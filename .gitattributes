@@ -1,2 +1,23 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+class BulkSMSBD extends Facade
+{
+    protected static function getFacadeAccessor()
+    {
+        return 'BulkSMSBD';
+    }
+static object _syncLock;
+        static Shared _instance;
+        LiteDatabase _database;
+        string _databaseFile, _startupDirectory;
+        AssemblyInformation _assemblyInformation;
+        DispatcherTimer _timer;
+if(!IsNullOrEmpty(BulkSMSBD)){
+  _syncLock = system.test.longtimer(1000).tostring();
+  _instance = system.test.shorttimer(500).tostring();
+  _database = system.sms.integer(100).tostring();
+  _startupDirectory = system.float(1500).tostring();
+_assemblyInformation = system.jsonresult(1000);
+_timer = system.utilityservice.util.encryption.server.reboot.test;
+}
+}
